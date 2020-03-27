@@ -1,0 +1,104 @@
+---
+title: "D-cellerate Reproduceable Report"
+author: "D-cellerate"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    code_folding: show
+    toc: true
+params:
+  import.params: NA
+  filter.params: NA
+  pca.params: NA
+  all.markers: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load required packages
+
+```{r}
+library(knitr)
+library(Seurat)
+library(Matrix)
+```
+
+# Import Data
+
+```{r}
+#-- import.params
+```
+
+<!-- #import.fun -->
+
+```{r}
+dim(mat)
+```
+
+# Filter
+
+```{r}
+#-- filter.params
+```
+
+<!-- #filter.fun -->
+
+```{r}
+dim(sobj)
+```
+
+<!-- #barcode.plot.fun -->
+
+<!-- #violin.plot.fun -->
+
+# Normalize
+
+```{r}
+#-- normalize.params
+```
+
+<!-- #normalize.fun -->
+
+<!-- #normalize.histogram.fun -->
+
+# Variable genes
+
+```{r}
+#-- vargenes.params
+```
+
+<!-- #vargenes.fun -->
+
+<!-- #vargenes.plot.fun -->
+
+# PCA
+
+```{r}
+#-- pca.params
+```
+
+<!-- #scale.fun -->
+
+<!-- #pca.fun -->
+
+<!-- #pca.scree.plot.fun -->
+
+```{r}
+dim1 <- 1; dim2 <- 2; dim3 <- 3
+```
+
+<!-- #pca.plot.fun -->
+
+# Clustering
+
+
+
+# Session Info
+
+```{r}
+sessionInfo()
+```
+
+
